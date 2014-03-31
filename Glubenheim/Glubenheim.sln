@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glubenheim", "Glubenheim.csproj", "{208A0953-DAB5-4752-9ACB-5E49B091738E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{208A0953-DAB5-4752-9ACB-5E49B091738E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{208A0953-DAB5-4752-9ACB-5E49B091738E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{208A0953-DAB5-4752-9ACB-5E49B091738E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{208A0953-DAB5-4752-9ACB-5E49B091738E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Glubenheim.csproj
+	EndGlobalSection
+EndGlobal

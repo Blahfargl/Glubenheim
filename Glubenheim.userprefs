@@ -2,12 +2,13 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Glubenheim\MainActivity.cs">
     <Files>
-      <File FileName="Glubenheim\MainActivity.cs" Line="35" Column="1" />
+      <File FileName="Glubenheim\MainActivity.cs" Line="53" Column="6" />
+      <File FileName="Glubenheim\Resources\drawable\popup_menu.xml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Glubenheim MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" />
+  <MonoDevelop.Ide.ItemProperties.Glubenheim MonoForAntroid.PreferredDevice="7&quot; WSVGA (Tablet)" AndroidDeviceId-Debug="c0808f081495dbf" />
 </Properties>

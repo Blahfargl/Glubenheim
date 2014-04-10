@@ -42,7 +42,20 @@ namespace Glubenheim
 			button1.Click += delegate {
 				button1.Text = string.Format ("Thanks! {0} clicks.", count++); 
 			};
-		}
+
+			Button showPopupMenu = FindViewById<Button> (Resource.Id.popupButton);
+			showPopupMenu.Click += (s, arg) => {
+				PopupMenu menu = new PopupMenu (this, showPopupMenu);
+				menu.Inflate (Resource.Drawable.popup_menu);
+
+				menu.MenuItemClick += (s1, arg1) => {
+					Console.WriteLine ("{0} selected", arg1.Item.TitleFormatted);
+
+				};
+
+				menu.Show (); 
+			}; 
+		} 
 
 		// Creating a toast with a given text 
 		public void DisplayCustomToast (string stringText)

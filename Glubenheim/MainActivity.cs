@@ -17,7 +17,10 @@ namespace Glubenheim
 	[Activity (ScreenOrientation = Android.Content.PM.ScreenOrientation.Landscape, MainLauncher = true)]
 	public class MainActivity : Activity
 	{
-		int count = 1;
+		int count = 1; 
+
+		// The ip address of the server 
+		string ipAddress = "192.168.1.15"; 
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -45,7 +48,7 @@ namespace Glubenheim
 			};
 
 			button2.Click += delegate {
-				Connect ("127.0.0.1", "Button 2 was clicked");
+				Connect (ipAddress, "Button 2 was clicked");
 			};
 
 			Button showPopupMenu = FindViewById<Button> (Resource.Id.popupButton);

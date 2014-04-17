@@ -15,10 +15,8 @@ using Android.OS;
 namespace Glubenheim
 {
 	[Activity (ScreenOrientation = Android.Content.PM.ScreenOrientation.Landscape, MainLauncher = true)]
-	public class MainActivity : Activity
+	public class MainActivity : Activity, View.IOnTouchListener
 	{
-		int count = 1; 
-
 		// The ip address of the server 
 		string ipAddress = "192.168.1.15"; 
 
@@ -39,26 +37,53 @@ namespace Glubenheim
 				DisplayCustomToast("Image clicked!");
 			};
 
-			// Two buttons and events 
+			// Buttons and events 
 			Button button1 = FindViewById<Button> (Resource.Id.myButton1);
 			Button button2 = FindViewById<Button> (Resource.Id.myButton2);
+			Button button3 = FindViewById<Button> (Resource.Id.myButton3);
+			Button button4 = FindViewById<Button> (Resource.Id.myButton4);
+
+			//button4.SetOnTouchListener (this);
 
 			button1.Click += delegate {
-				button1.Text = string.Format ("Thanks! {0} clicks.", count++); 
+				Connect (ipAddress, "button1");
 			};
 
 			button2.Click += delegate {
-				Connect (ipAddress, "Button 2 was clicked");
+				Connect (ipAddress, "button2");
 			};
+
+			button3.Click += delegate {
+				Connect (ipAddress, "button3");
+			};
+
+			button4.Click += delegate {
+				Connect (ipAddress, "button4");
+			};
+
 
 			Button showPopupMenu = FindViewById<Button> (Resource.Id.popupButton);
 			showPopupMenu.Click += (s, arg) => {
 				PopupMenu menu = new PopupMenu (this, showPopupMenu);
-				menu.Inflate (Resource.Drawable.popup_menu);
+				menu.Inflate (Resource.Menu.popup_menu);
 
-				menu.MenuItemClick += (s1, arg1) => {
-					Console.WriteLine ("{0} selected", arg1.Item.TitleFormatted);
+				menu.MenuItemClick += (s1, arg1) => { 
+					switch (arg1.Item.ItemId)
+					{
+						case Resource.Id.item1:
+							DisplayCustomToast("Item 1");
+							break;
+						case Resource.Id.item2:
+							DisplayCustomToast("Item 2");
+							break;
+						case Resource.Id.item3:
+							DisplayCustomToast("Item 3");
+							break;
+					}
+				};
 
+				menu.DismissEvent += (s2, arg2) => {
+					Console.WriteLine ("menu dismissed"); 
 				};
 
 				menu.Show (); 
@@ -71,6 +96,21 @@ namespace Glubenheim
 			Toast toast = Toast.MakeText(this, stringText, ToastLength.Short);
 			toast.SetGravity(GravityFlags.Bottom, 0, 0);
 			toast.Show();
+		}
+
+		// Check touch position on button (Could be used to simulate mouse pad) 
+		public bool OnTouch(View v, MotionEvent e)
+		{
+			switch (e.Action)
+			{
+				case MotionEventActions.Down:
+					Console.WriteLine(e.GetX() + " " + e.GetY ());
+					break;
+				case MotionEventActions.Move:
+					Console.WriteLine(e.GetX() + " " + e.GetY ());
+					break;
+			}
+			return true;
 		}
 
 		// Connect with Tcp server on computer,
@@ -90,8 +130,6 @@ namespace Glubenheim
 				Byte[] data = System.Text.Encoding.ASCII.GetBytes(message);         
 
 				// Get a client stream for reading and writing. 
-				//  Stream stream = client.GetStream();
-
 				NetworkStream stream = client.GetStream();
 
 				// Send the message to the connected TcpServer. 
@@ -124,9 +162,6 @@ namespace Glubenheim
 			{
 				Console.WriteLine("SocketException: {0}", e);
 			}
-
-			//Console.WriteLine("\n Press Enter to continue...");
-			//Console.Read();
 		}
 	}
 }

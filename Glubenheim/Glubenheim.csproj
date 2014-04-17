@@ -64,7 +64,10 @@
     <AndroidResource Include="Resources\drawable\Avatar_focused.jpg" />
     <AndroidResource Include="Resources\drawable\Avatar_pressed.jpg" />
     <AndroidResource Include="Resources\drawable\custom_button.xml" />
-    <AndroidResource Include="Resources\drawable\popup_menu.xml" />
+    <AndroidResource Include="Resources\menu\popup_menu.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\menu\" />
+  </ItemGroup>
 </Project>

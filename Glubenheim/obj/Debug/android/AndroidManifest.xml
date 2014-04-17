@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="0.1.0" package="Glubenheim.Glubenheim">
-  <uses-sdk android:minSdkVersion="15" />
+  <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15" />
   <application android:label="Glubenheim" android:icon="@drawable/icon" android:name="mono.android.app.Application" android:debuggable="true">
     <activity android:screenOrientation="landscape" android:name="glubenheim.MainActivity">
       <intent-filter>

@@ -14,12 +14,16 @@ using Android.OS;
 
 namespace Glubenheim
 {
+	// To get the ScreenOrientation as landscape
 	[Activity (ScreenOrientation = Android.Content.PM.ScreenOrientation.Landscape, MainLauncher = true)]
+	// Activity is an android class. View.IOnTouchListener checks if the screen has been touched
 	public class MainActivity : Activity, View.IOnTouchListener
 	{
-		// The ip address of the server 
+		// The ip address of the server
+		// Needs to be changed depending on which network is used
 		string ipAddress = "192.168.1.15";
 
+		// Build the apllication
 		protected override void OnCreate (Bundle bundle)
 		{
 			// Removes the huge titlebar in the top of the app  
@@ -33,6 +37,7 @@ namespace Glubenheim
 			// ImageButton
 			ImageButton imgButton = FindViewById<ImageButton> (Resource.Id.myImageButton);
 
+			// In case of a click
 			imgButton.Click += delegate { 
 				DisplayCustomToast("Image clicked!");
 			};
@@ -61,13 +66,14 @@ namespace Glubenheim
 				Connect (ipAddress, "button4");
 			};
 
-
-			Button showPopupMenu = FindViewById<Button> (Resource.Id.popupButton);
+			// Build and shows a PopupMenu, used for the selection of layouts
+			Button showPopupMenu = FindViewById<Button> (Resource.Id.popupButton); // Finds the popupBUtton in the class Main and call it showPopupMenu
 			showPopupMenu.Click += (s, arg) => {
-				PopupMenu menu = new PopupMenu (this, showPopupMenu);
-				menu.Inflate (Resource.Menu.popup_menu);
+				PopupMenu menu = new PopupMenu (this, showPopupMenu); // Here the button is made into a popupMenu
+				menu.Inflate (Resource.Menu.popup_menu); // Loader our popup_Menu.xml
 
 				menu.MenuItemClick += (s1, arg1) => { 
+					// This switch case checks which item (layout) has been clicked
 					switch (arg1.Item.ItemId)
 					{
 						case Resource.Id.item1:
@@ -86,6 +92,7 @@ namespace Glubenheim
 					Console.WriteLine ("menu dismissed"); 
 				};
 
+				// This line draws the menu
 				menu.Show (); 
 			}; 
 		} 
@@ -103,9 +110,11 @@ namespace Glubenheim
 		{
 			switch (e.Action)
 			{
+				// Print the x and y position for a click
 				case MotionEventActions.Down:
 					Console.WriteLine(e.GetX() + " " + e.GetY ());
 					break;
+				// Print the x and y position continously
 				case MotionEventActions.Move:
 					Console.WriteLine(e.GetX() + " " + e.GetY ());
 					break;
@@ -121,8 +130,7 @@ namespace Glubenheim
 			{
 				// Create a TcpClient. 
 				// Note, for this client to work you need to have a TcpServer  
-				// connected to the same address as specified by the server, port 
-				// combination.
+				// connected to the same address as specified by the server, port combination.
 				Int32 port = 2814;
 				TcpClient client = new TcpClient(server, port);
 
@@ -137,7 +145,7 @@ namespace Glubenheim
 
 				Console.WriteLine("Sent: {0}", message);         
 
-				// Receive the TcpServer.response. 
+				// Receive the TcpServer.response. - could be deleted
 
 				// Buffer to store the response bytes.
 				data = new Byte[256];

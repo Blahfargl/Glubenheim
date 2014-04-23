@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Glubenheim\MainActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Glubenheim\MainActivity.cs" Line="9" Column="1" />
+      <File FileName="Glubenheim\MainActivity.cs" Line="153" Column="36" />
+      <File FileName="Glubenheim\Resources\menu\popup_menu.xml" Line="10" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

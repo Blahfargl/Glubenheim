@@ -8,7 +8,6 @@
     android:scrollbars="none">
     <Button
         android:id="@+id/myButton1"
-        android:text="@string/hello"
         android:layout_gravity="fill"
         android:layout_columnSpan="3"
         android:layout_width="wrap_content"
@@ -61,7 +60,6 @@
         android:layout_width="wrap_content" />
     <Button
         android:id="@+id/myButton3"
-        android:text="@string/hello"
         android:layout_gravity="fill"
         android:layout_rowSpan="2"
         android:layout_column="2"

@@ -18,7 +18,7 @@ namespace Glubenheim
 	public class MainActivity : Activity, View.IOnTouchListener
 	{
 		// The ip address of the server 
-		string ipAddress = "192.168.1.15"; 
+		string ipAddress = "192.168.1.15";
 
 		protected override void OnCreate (Bundle bundle)
 		{

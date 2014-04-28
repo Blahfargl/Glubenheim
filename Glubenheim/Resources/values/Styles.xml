@@ -1,9 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿<resources>
   <style name="Theme.Splash" parent="android:Theme">
     <item name="android:windowBackground">@drawable/splash</item>
     <item name="android:windowNoTitle">true</item>
   </style>
+=======
+﻿<resources>
+  <style name="Theme.Splash" parent="android:Theme">
+    <item name="android:windowBackground">@drawable/splash</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+>>>>>>> 2160300cd094c3a35b94ba3f2141a56848789e6a
 =======
 ﻿<resources>
   <style name="Theme.Splash" parent="android:Theme">

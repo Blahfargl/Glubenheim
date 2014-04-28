@@ -13,7 +13,7 @@ public class MainActivity
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onTouch:(Landroid/view/View;Landroid/view/MotionEvent;)Z:GetOnTouch_Landroid_view_View_Landroid_view_MotionEvent_Handler:Android.Views.View/IOnTouchListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"";
-		mono.android.Runtime.register ("Glubenheim.MainActivity, Glubenheim, Version=1.0.5226.15008, Culture=neutral, PublicKeyToken=null", MainActivity.class, __md_methods);
+		mono.android.Runtime.register ("Glubenheim.MainActivity, Glubenheim, Version=1.0.5231.25473, Culture=neutral, PublicKeyToken=null", MainActivity.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class MainActivity
 	{
 		super ();
 		if (getClass () == MainActivity.class)
-			mono.android.TypeManager.Activate ("Glubenheim.MainActivity, Glubenheim, Version=1.0.5226.15008, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Glubenheim.MainActivity, Glubenheim, Version=1.0.5231.25473, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

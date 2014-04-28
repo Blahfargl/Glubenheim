@@ -15,7 +15,7 @@ using Android.OS;
 namespace Glubenheim
 {
 	// To get the ScreenOrientation as landscape
-	[Activity (ScreenOrientation = Android.Content.PM.ScreenOrientation.Landscape, MainLauncher = true)]
+	[Activity (ScreenOrientation = Android.Content.PM.ScreenOrientation.Landscape)]
 	// Activity is an android class. View.IOnTouchListener checks if the screen has been touched
 	public class MainActivity : Activity, View.IOnTouchListener
 	{

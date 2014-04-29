@@ -32,7 +32,7 @@ namespace Glubenheim
 			base.OnCreate (bundle);
 
 			// Set the view as the main.axml layout 
-			SetContentView (Resource.Layout.Main);
+			SetContentView (Resource.Layout.LLO1);
 
 			/* ImageButton
 			ImageButton imgButton = FindViewById<ImageButton> (Resource.Id.BlueButton);
@@ -43,7 +43,7 @@ namespace Glubenheim
 			};*/
 
 			// Buttons and events 
-			Button button1 = FindViewById<Button> (Resource.Id.myButton1);
+			/*Button button1 = FindViewById<Button> (Resource.Id.myButton1);
 			Button button2 = FindViewById<Button> (Resource.Id.myButton2);
 			Button button3 = FindViewById<Button> (Resource.Id.myButton3);
 			Button button4 = FindViewById<Button> (Resource.Id.myButton4);
@@ -65,9 +65,10 @@ namespace Glubenheim
 			button4.Click += delegate {
 				Connect (ipAddress, "button4");
 			};
+			*/
 
 			// Build and shows a PopupMenu, used for the selection of layouts
-			Button showPopupMenu = FindViewById<Button> (Resource.Id.popupButton); // Finds the popupBUtton in the class Main and call it showPopupMenu
+			ImageButton showPopupMenu = FindViewById<ImageButton> (Resource.Id.PopUp); // Finds the popupBUtton in the class Main and call it showPopupMenu
 			showPopupMenu.Click += (s, arg) => {
 				PopupMenu menu = new PopupMenu (this, showPopupMenu); // Here the button is made into a popupMenu
 				menu.Inflate (Resource.Menu.popup_menu); // Loader our popup_Menu.xml

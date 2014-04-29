@@ -20,7 +20,7 @@
             android:layout_height="0dp"
             android:layout_weight="1">
             <ImageButton
-                android:id="@+id/B1Button"
+                android:id="@+id/Bumper1Button"
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
                 android:layout_gravity="center"
@@ -177,7 +177,7 @@
             android:layout_height="0dp"
             android:layout_weight="1">
             <ImageButton
-                android:id="@+id/B2Button"
+                android:id="@+id/Bumper2Button"
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
                 android:layout_gravity="center"

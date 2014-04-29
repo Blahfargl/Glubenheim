@@ -156,11 +156,17 @@ namespace tcpListener
 			case "XButton":
 				SendKeys.SendWait ("XButton");
 				break;
-			0			case "AButton":
+			case "AButton":
 				SendKeys.SendWait ("AButton");
 				break;
 			case "BButton":
 				SendKeys.SendWait ("BButton");
+				break;
+			case "Bumper1Button":
+				SendKeys.SendWait ("Bumper1Button");
+				break;
+			case "Bumper2Button":
+				SendKeys.SendWait ("Bumper2Button");
 				break;
 			case "MidButton":
 				MouseEventArgs. ("MidMouse");

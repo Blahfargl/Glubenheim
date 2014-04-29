@@ -16,7 +16,7 @@
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AssemblyName>Glubenheim</AssemblyName>
-    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -58,20 +58,18 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
-    <AndroidResource Include="Resources\drawable\Avatar.jpg" />
-    <AndroidResource Include="Resources\drawable\Avatar_focused.jpg" />
-    <AndroidResource Include="Resources\drawable\Avatar_pressed.jpg" />
-    <AndroidResource Include="Resources\drawable\custom_button.xml" />
     <AndroidResource Include="Resources\menu\popup_menu.xml" />
-    <AndroidResource Include="Resources\layout\Layout2.axml" />
     <AndroidResource Include="Resources\values\Styles.xml" />
     <AndroidResource Include="Resources\drawable\splash.png" />
+    <AndroidResource Include="Resources\layout\LLO1.axml" />
+    <AndroidResource Include="Resources\layout\LLO2.axml" />
+    <AndroidResource Include="Resources\layout\LLO3.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Resources\menu\" />
+    <Folder Include="Resources\layout\" />
   </ItemGroup>
 </Project>

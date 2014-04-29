@@ -34,13 +34,13 @@ namespace Glubenheim
 			// Set the view as the main.axml layout 
 			SetContentView (Resource.Layout.Main);
 
-			// ImageButton
-			ImageButton imgButton = FindViewById<ImageButton> (Resource.Id.myImageButton);
+			/* ImageButton
+			ImageButton imgButton = FindViewById<ImageButton> (Resource.Id.BlueButton);
 
 			// In case of a click
 			imgButton.Click += delegate { 
 				DisplayCustomToast("Image clicked!");
-			};
+			};*/
 
 			// Buttons and events 
 			Button button1 = FindViewById<Button> (Resource.Id.myButton1);

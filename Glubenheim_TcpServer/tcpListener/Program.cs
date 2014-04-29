@@ -132,35 +132,44 @@ namespace tcpListener
 		{
 			switch(msg)
 			{
-			case "button1":
+			case "UpButton":
 				SendKeys.SendWait ("{UP}");
 				break;
-			case "button2":
+			case "DownButton":
 				SendKeys.SendWait ("{DOWN}");
 				break;
-			case "button3":
+			case "LeftButton":
 				SendKeys.SendWait ("{LEFT}");
 				break;
-			case "button4":
+			case "RightButton":
 				SendKeys.SendWait ("{RIGHT}");
 				break;
-			case "button2":
-				SendKeys.SendWait ("");
+			case "SelectButton":
+				SendKeys.SendWait ("{ESC}");
 				break;
-			case "button2":
-				SendKeys.SendWait ("");
+			case "StartButton":
+				SendKeys.SendWait ("{ENTER}");
 				break;
-			case "button2":
-				SendKeys.SendWait ("{DOWN}");
+			case "YButton":
+				SendKeys.SendWait ("YButton");
 				break;
-			case "button2":
-				SendKeys.SendWait ("{DOWN}");
+			case "XButton":
+				SendKeys.SendWait ("XButton");
 				break;
-			case "button2":
-				SendKeys.SendWait ("{DOWN}");
+			0			case "AButton":
+				SendKeys.SendWait ("AButton");
 				break;
-			case "button2":
-				SendKeys.SendWait ("{DOWN}");
+			case "BButton":
+				SendKeys.SendWait ("BButton");
+				break;
+			case "MidButton":
+				MouseEventArgs. ("MidMouse");
+				break;
+			case "MRightButton":
+				SendKeys.SendWait ("RightMouse");
+				break;
+			case "MLeftButton":
+				SendKeys.SendWait ("LeftMouse");
 				break;
 			default:
 				// for random input text

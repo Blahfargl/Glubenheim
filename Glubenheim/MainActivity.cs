@@ -21,7 +21,7 @@ namespace Glubenheim
 	{
 		// The ip address of the server
 		// Needs to be changed depending on which network is used
-		string ipAddress = "192.168.1.15";
+		string ipAddress = "192.168.1.15"; //makes a layout that asks about the computers ip address
 
 		// Build the apllication
 		protected override void OnCreate (Bundle bundle)
@@ -43,27 +43,64 @@ namespace Glubenheim
 			};*/
 
 			// Buttons and events 
-			Button button1 = FindViewById<Button> (Resource.Id.myButton1);
-			Button button2 = FindViewById<Button> (Resource.Id.myButton2);
-			Button button3 = FindViewById<Button> (Resource.Id.myButton3);
-			Button button4 = FindViewById<Button> (Resource.Id.myButton4);
+			Button UpButton = FindViewById<Button> (Resource.Id.UpButton);
+			Button DownButton = FindViewById<Button> (Resource.Id.DownButton);
+			Button LeftButton = FindViewById<Button> (Resource.Id.LeftButton);
+			Button RightButton = FindViewById<Button> (Resource.Id.RightButton);
 
-			//button4.SetOnTouchListener (this);
+			Button SelectButton = FindViewById<Button> (Resource.Id.SelectButton);
+			Button StartButton = FindViewById<Button> (Resource.Id.StartButton);
 
-			button1.Click += delegate {
-				Connect (ipAddress, "button1");
+			Button YButton = FindViewById<Button> (Resource.Id.YButton);
+			Button XButton = FindViewById<Button> (Resource.Id.XButton);
+			Button AButton = FindViewById<Button> (Resource.Id.AButton);
+			Button BButton = FindViewById<Button> (Resource.Id.BButton);
+
+			Button MMidButton = FindViewById<Button> (Resource.Id.MMidButton);
+			Button MRightButton = FindViewById<Button> (Resource.Id.MRightButton);
+			Button MLeftButton = FindViewById<Button> (Resource.Id.MLeftButton);
+
+			UpButton.Click += delegate {
+				Connect (ipAddress, "UpButton");
+			};
+			DownButton.Click += delegate {
+				Connect (ipAddress, "DownButton");
+			};
+			LeftButton.Click += delegate {
+				Connect (ipAddress, "LeftButton");
+			};
+			RightButton.Click += delegate {
+				Connect (ipAddress, "LeftButton");
 			};
 
-			button2.Click += delegate {
-				Connect (ipAddress, "button2");
+			SelectButton.Click += delegate {
+				Connect (ipAddress, "SelectButton");
+			};
+			StartButton.Click += delegate {
+				Connect (ipAddress, "StartButton");
 			};
 
-			button3.Click += delegate {
-				Connect (ipAddress, "button3");
+			YButton.Click += delegate {
+				Connect (ipAddress, "YButton");
+			};
+			XButton.Click += delegate {
+				Connect (ipAddress, "XButton");
+			};
+			AButton.Click += delegate {
+				Connect (ipAddress, "AButton");
+			};
+			BButton.Click += delegate {
+				Connect (ipAddress, "BButton");
 			};
 
-			button4.Click += delegate {
-				Connect (ipAddress, "button4");
+			MMidButton.Click += delegate {
+				Connect (ipAddress, "MidMButton");
+			};
+			MRightButton.Click += delegate {
+				Connect (ipAddress, "MRightButton");
+			};
+			MLeftButton.Click += delegate {
+				Connect (ipAddress, "MLeftButton");
 			};
 
 			// Build and shows a PopupMenu, used for the selection of layouts

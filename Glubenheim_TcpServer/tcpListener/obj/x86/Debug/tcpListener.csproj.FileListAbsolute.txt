@@ -8,3 +8,8 @@ C:\Users\NMK\Dropbox\Min\Universitets ting\Med 6\OOSE Again\tcpListener\tcpListe
 C:\Users\NMK\Dropbox\Min\Universitets ting\Med 6\OOSE Again\tcpListener\tcpListener\obj\x86\Debug\tcpListener.csprojResolveAssemblyReference.cache
 C:\Users\NMK\Dropbox\Min\Universitets ting\Med 6\OOSE Again\tcpListener\tcpListener\obj\x86\Debug\tcpListener.exe
 C:\Users\NMK\Dropbox\Min\Universitets ting\Med 6\OOSE Again\tcpListener\tcpListener\obj\x86\Debug\tcpListener.pdb
+C:\Users\NMK\Documents\GitHub\Glubenheim\Glubenheim_TcpServer\tcpListener\bin\Debug\tcpListener.exe
+C:\Users\NMK\Documents\GitHub\Glubenheim\Glubenheim_TcpServer\tcpListener\bin\Debug\tcpListener.pdb
+C:\Users\NMK\Documents\GitHub\Glubenheim\Glubenheim_TcpServer\tcpListener\obj\x86\Debug\tcpListener.csprojResolveAssemblyReference.cache
+C:\Users\NMK\Documents\GitHub\Glubenheim\Glubenheim_TcpServer\tcpListener\obj\x86\Debug\tcpListener.exe
+C:\Users\NMK\Documents\GitHub\Glubenheim\Glubenheim_TcpServer\tcpListener\obj\x86\Debug\tcpListener.pdb

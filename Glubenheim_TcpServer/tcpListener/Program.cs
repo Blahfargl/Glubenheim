@@ -27,7 +27,7 @@ namespace tcpListener
 				Int32 port = 2814;
 				// Your local ipAddres.
 				// Open cmd -> write "ipconfig" -> see IPv4-address. 
-				IPAddress localAddr = IPAddress.Parse("192.168.1.18");
+				IPAddress localAddr = IPAddress.Parse(ipFinder());
 
 				server = new TcpListener(localAddr, port);
 
@@ -41,11 +41,13 @@ namespace tcpListener
 				// Enter the listening loop
 				while(true)
 				{
+					Console.WriteLine("Local Ip Address: " + localAddr);
 					Console.Write("Waiting for a connection... ");
 
 					// Perform a blocking call to accept requests
 					TcpClient client = server.AcceptTcpClient();
 					Console.WriteLine("Connected!");
+
 
 					data = null;
 
@@ -68,7 +70,7 @@ namespace tcpListener
 							Console.WriteLine("Input string is a number");
 							intOrString = true;
 						}
-						catch (FormatException e)
+						catch (FormatException)
 						{
 							Console.WriteLine("Input string not a number");
 							intOrString = false;
@@ -130,12 +132,39 @@ namespace tcpListener
 		{
 			switch(msg)
 			{
-				case "button1":
-					SendKeys.SendWait ("{UP}");
-					break;
-				default:
-					// for random input text
-					SendKeys.SendWait (msg);
+			case "button1":
+				SendKeys.SendWait ("{UP}");
+				break;
+			case "button2":
+				SendKeys.SendWait ("{DOWN}");
+				break;
+			case "button3":
+				SendKeys.SendWait ("{LEFT}");
+				break;
+			case "button4":
+				SendKeys.SendWait ("{RIGHT}");
+				break;
+			case "button2":
+				SendKeys.SendWait ("");
+				break;
+			case "button2":
+				SendKeys.SendWait ("");
+				break;
+			case "button2":
+				SendKeys.SendWait ("{DOWN}");
+				break;
+			case "button2":
+				SendKeys.SendWait ("{DOWN}");
+				break;
+			case "button2":
+				SendKeys.SendWait ("{DOWN}");
+				break;
+			case "button2":
+				SendKeys.SendWait ("{DOWN}");
+				break;
+			default:
+				// for random input text
+				SendKeys.SendWait (msg);
 					break;
 			}
 		}
@@ -146,6 +175,20 @@ namespace tcpListener
 			int crnt_x = System.Windows.Forms.Control.MousePosition.X;
 			int crnt_y = System.Windows.Forms.Control.MousePosition.Y;
 			Cursor.Position = new Point (crnt_x + new_x, crnt_y + new_y);
+		}
+
+		private static string ipFinder(){ //Finds the last local ip address 
+			IPHostEntry host;
+			string localIP = "?";
+			host = Dns.GetHostEntry(Dns.GetHostName());
+			foreach (IPAddress ip in host.AddressList)
+			{
+				if (ip.AddressFamily == AddressFamily.InterNetwork)
+				{
+					localIP = ip.ToString();
+				}
+			}
+			return localIP;
 		}
 	}
 }

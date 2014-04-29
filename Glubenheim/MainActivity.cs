@@ -32,7 +32,7 @@ namespace Glubenheim
 			base.OnCreate (bundle);
 
 			// Set the view as the main.axml layout 
-			SetContentView (Resource.Layout.Main);
+			SetContentView (Resource.Layout.LLO1);
 
 			/* ImageButton
 			ImageButton imgButton = FindViewById<ImageButton> (Resource.Id.BlueButton);
@@ -43,10 +43,17 @@ namespace Glubenheim
 			};*/
 
 			// Buttons and events 
+<<<<<<< HEAD
 			Button UpButton = FindViewById<Button> (Resource.Id.UpButton);
 			Button DownButton = FindViewById<Button> (Resource.Id.DownButton);
 			Button LeftButton = FindViewById<Button> (Resource.Id.LeftButton);
 			Button RightButton = FindViewById<Button> (Resource.Id.RightButton);
+=======
+			/*Button button1 = FindViewById<Button> (Resource.Id.myButton1);
+			Button button2 = FindViewById<Button> (Resource.Id.myButton2);
+			Button button3 = FindViewById<Button> (Resource.Id.myButton3);
+			Button button4 = FindViewById<Button> (Resource.Id.myButton4);
+>>>>>>> 7e31a57a990d5f1e66eaff60fe4537875ecef6ea
 
 			Button SelectButton = FindViewById<Button> (Resource.Id.SelectButton);
 			Button StartButton = FindViewById<Button> (Resource.Id.StartButton);
@@ -102,9 +109,10 @@ namespace Glubenheim
 			MLeftButton.Click += delegate {
 				Connect (ipAddress, "MLeftButton");
 			};
+			*/
 
 			// Build and shows a PopupMenu, used for the selection of layouts
-			Button showPopupMenu = FindViewById<Button> (Resource.Id.popupButton); // Finds the popupBUtton in the class Main and call it showPopupMenu
+			ImageButton showPopupMenu = FindViewById<ImageButton> (Resource.Id.PopUp); // Finds the popupBUtton in the class Main and call it showPopupMenu
 			showPopupMenu.Click += (s, arg) => {
 				PopupMenu menu = new PopupMenu (this, showPopupMenu); // Here the button is made into a popupMenu
 				menu.Inflate (Resource.Menu.popup_menu); // Loader our popup_Menu.xml

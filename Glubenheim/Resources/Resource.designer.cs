@@ -54,148 +54,175 @@ namespace Glubenheim
 			public const int AButtonXML = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int BButton = 2130837507;
+			public const int B1Button = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int BButtonP = 2130837508;
+			public const int B1ButtonP = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int BButtonXML = 2130837509;
+			public const int B1ButtonXML = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int ClearButton = 2130837510;
+			public const int B2Button = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int ClearButtonP = 2130837511;
+			public const int B2ButtonP = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int ClearButtonXML = 2130837512;
+			public const int B2ButtonXML = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int DownButton = 2130837513;
+			public const int BButton = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int DownButtonP = 2130837514;
+			public const int BButtonP = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int DownButtonXML = 2130837515;
+			public const int BButtonXML = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int HelpButton = 2130837516;
+			public const int ClearButton = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int HelpButtonP = 2130837517;
+			public const int ClearButtonP = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int HelpButtonXML = 2130837518;
+			public const int ClearButtonXML = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int Icon = 2130837519;
+			public const int DownButton = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int LeftButton = 2130837520;
+			public const int DownButtonP = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int LeftButtonP = 2130837521;
+			public const int DownButtonXML = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int LeftButtonXML = 2130837522;
+			public const int HelpButton = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int LeftMouse = 2130837523;
+			public const int HelpButtonP2 = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int LeftMouseP = 2130837524;
+			public const int HelpButtonXML = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int LeftMouseXML = 2130837525;
+			public const int Icon = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int MidButton = 2130837526;
+			public const int LayoutButton = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int MidButtonP = 2130837527;
+			public const int LayoutButtonP = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int MidButtonXML = 2130837528;
+			public const int LayoutButtonXML = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int MousePad = 2130837529;
+			public const int LeftButton = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int RightButton = 2130837530;
+			public const int LeftButtonP = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int RightButtonP = 2130837531;
+			public const int LeftButtonXML = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int RightButtonXML = 2130837532;
+			public const int LeftMouse = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int RightMouse = 2130837533;
+			public const int LeftMouseP = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int RightMouseP = 2130837534;
+			public const int LeftMouseXML = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int RightMouseXML = 2130837535;
+			public const int MidButton = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int SelectButton = 2130837536;
+			public const int MidButtonP = 2130837536;
 			
 			// aapt resource value: 0x7f020021
-			public const int SelectButtonP = 2130837537;
+			public const int MidButtonXML = 2130837537;
 			
 			// aapt resource value: 0x7f020022
-			public const int SelectButtonXML = 2130837538;
+			public const int MousePad = 2130837538;
 			
 			// aapt resource value: 0x7f020023
-			public const int SendButton = 2130837539;
+			public const int RightButton = 2130837539;
 			
 			// aapt resource value: 0x7f020024
-			public const int SendButtonP = 2130837540;
+			public const int RightButtonP = 2130837540;
 			
 			// aapt resource value: 0x7f020025
-			public const int SendButtonXML = 2130837541;
+			public const int RightButtonXML = 2130837541;
 			
 			// aapt resource value: 0x7f020026
-			public const int splash = 2130837542;
+			public const int RightMouse = 2130837542;
 			
 			// aapt resource value: 0x7f020027
-			public const int StartButton = 2130837543;
+			public const int RightMouseP = 2130837543;
 			
 			// aapt resource value: 0x7f020028
-			public const int StartButtonP = 2130837544;
+			public const int RightMouseXML = 2130837544;
 			
 			// aapt resource value: 0x7f020029
-			public const int StartButtonXML = 2130837545;
+			public const int Select1 = 2130837545;
 			
 			// aapt resource value: 0x7f02002a
-			public const int UpButton = 2130837546;
+			public const int Select1P = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public const int UpButtonP = 2130837547;
+			public const int SelectButtonXML = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public const int UpButtonXML = 2130837548;
+			public const int SendButton = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int XButton = 2130837549;
+			public const int SendButtonP = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public const int XButtonP = 2130837550;
+			public const int SendButtonXML = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int XButtonXML = 2130837551;
+			public const int splash = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int YButton = 2130837552;
+			public const int StartButton1 = 2130837552;
 			
 			// aapt resource value: 0x7f020031
-			public const int YButtonP = 2130837553;
+			public const int StartButton1P = 2130837553;
 			
 			// aapt resource value: 0x7f020032
-			public const int YButtonXML = 2130837554;
+			public const int StartButtonXML = 2130837554;
+			
+			// aapt resource value: 0x7f020033
+			public const int UpButton = 2130837555;
+			
+			// aapt resource value: 0x7f020034
+			public const int UpButtonP = 2130837556;
+			
+			// aapt resource value: 0x7f020035
+			public const int UpButtonXML = 2130837557;
+			
+			// aapt resource value: 0x7f020036
+			public const int XButton = 2130837558;
+			
+			// aapt resource value: 0x7f020037
+			public const int XButtonP = 2130837559;
+			
+			// aapt resource value: 0x7f020038
+			public const int XButtonXML = 2130837560;
+			
+			// aapt resource value: 0x7f020039
+			public const int YButton = 2130837561;
+			
+			// aapt resource value: 0x7f02003a
+			public const int YButtonP = 2130837562;
+			
+			// aapt resource value: 0x7f02003b
+			public const int YButtonXML = 2130837563;
 			
 			static Drawable()
 			{
@@ -213,14 +240,14 @@ namespace Glubenheim
 			// aapt resource value: 0x7f070007
 			public const int AButton = 2131165191;
 			
-			// aapt resource value: 0x7f07000a
-			public const int B1Button = 2131165194;
-			
-			// aapt resource value: 0x7f07000c
-			public const int B2Button = 2131165196;
-			
 			// aapt resource value: 0x7f070008
 			public const int BButton = 2131165192;
+			
+			// aapt resource value: 0x7f07000a
+			public const int Bumper1Button = 2131165194;
+			
+			// aapt resource value: 0x7f07000c
+			public const int Bumper2Button = 2131165196;
 			
 			// aapt resource value: 0x7f070015
 			public const int ClearButton = 2131165205;
@@ -240,11 +267,11 @@ namespace Glubenheim
 			// aapt resource value: 0x7f070011
 			public const int MLeftButton = 2131165201;
 			
+			// aapt resource value: 0x7f070010
+			public const int MMidButton = 2131165200;
+			
 			// aapt resource value: 0x7f070012
 			public const int MRightButton = 2131165202;
-			
-			// aapt resource value: 0x7f070010
-			public const int MidButton = 2131165200;
 			
 			// aapt resource value: 0x7f070005
 			public const int PopUp = 2131165189;

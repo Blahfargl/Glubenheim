@@ -80,8 +80,6 @@
     <AndroidResource Include="Resources\drawable\ClearButtonP.jpg" />
     <AndroidResource Include="Resources\drawable\DownButton.jpg" />
     <AndroidResource Include="Resources\drawable\DownButtonP.jpg" />
-    <AndroidResource Include="Resources\drawable\HelpButton.jpg" />
-    <AndroidResource Include="Resources\drawable\HelpButtonP.jpg" />
     <AndroidResource Include="Resources\drawable\LeftButton.jpg" />
     <AndroidResource Include="Resources\drawable\LeftButtonP.jpg" />
     <AndroidResource Include="Resources\drawable\LeftMouse.jpg" />
@@ -93,12 +91,8 @@
     <AndroidResource Include="Resources\drawable\RightButtonP.jpg" />
     <AndroidResource Include="Resources\drawable\RightMouse.jpg" />
     <AndroidResource Include="Resources\drawable\RightMouseP.jpg" />
-    <AndroidResource Include="Resources\drawable\SelectButton.jpg" />
-    <AndroidResource Include="Resources\drawable\SelectButtonP.jpg" />
     <AndroidResource Include="Resources\drawable\SendButton.jpg" />
     <AndroidResource Include="Resources\drawable\SendButtonP.jpg" />
-    <AndroidResource Include="Resources\drawable\StartButton.jpg" />
-    <AndroidResource Include="Resources\drawable\StartButtonP.jpg" />
     <AndroidResource Include="Resources\drawable\UpButton.jpg" />
     <AndroidResource Include="Resources\drawable\UpButtonP.jpg" />
     <AndroidResource Include="Resources\drawable\BButtonXML.xml" />
@@ -115,6 +109,21 @@
     <AndroidResource Include="Resources\drawable\LeftMouseXML.xml" />
     <AndroidResource Include="Resources\drawable\RightMouseXML.xml" />
     <AndroidResource Include="Resources\drawable\MidButtonXML.xml" />
+    <AndroidResource Include="Resources\drawable\HelpButton.jpg" />
+    <AndroidResource Include="Resources\drawable\HelpButtonP2.jpg" />
+    <AndroidResource Include="Resources\drawable\Select1.jpg" />
+    <AndroidResource Include="Resources\drawable\Select1P.jpg" />
+    <AndroidResource Include="Resources\drawable\StartButton1.jpg" />
+    <AndroidResource Include="Resources\drawable\StartButton1P.jpg" />
+    <AndroidResource Include="Resources\drawable\LayoutButton.jpg" />
+    <AndroidResource Include="Resources\drawable\LayoutButtonP.jpg" />
+    <AndroidResource Include="Resources\drawable\LayoutButtonXML.xml" />
+    <AndroidResource Include="Resources\drawable\B1Button.jpg" />
+    <AndroidResource Include="Resources\drawable\B1ButtonP.jpg" />
+    <AndroidResource Include="Resources\drawable\B2Button.jpg" />
+    <AndroidResource Include="Resources\drawable\B2ButtonP.jpg" />
+    <AndroidResource Include="Resources\drawable\B1ButtonXML.xml" />
+    <AndroidResource Include="Resources\drawable\B2ButtonXML.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

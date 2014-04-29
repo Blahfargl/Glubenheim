@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+﻿<?xml version="1.0" encoding="utf-8"?>
+ <selector xmlns:android="http://schemas.android.com/apk/res/android">
+     <item android:state_pressed="true"
+           android:drawable="@drawable/B2ButtonP" /> <!-- pressed -->
+     <item android:drawable="@drawable/B2Button" /> <!-- default -->
+ </selector>
+=======
+﻿<?xml version="1.0" encoding="utf-8"?>
+ <selector xmlns:android="http://schemas.android.com/apk/res/android">
+     <item android:state_pressed="true"
+           android:drawable="@drawable/B2ButtonP" /> <!-- pressed -->
+     <item android:drawable="@drawable/B2Button" /> <!-- default -->
+ </selector>
+>>>>>>> cf2440c6423a5fdd85eaba4e5cca1166377f2280

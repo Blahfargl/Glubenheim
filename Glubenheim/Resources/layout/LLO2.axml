@@ -26,7 +26,8 @@
                 android:layout_gravity="center"
                 android:layout_weight="2"
                 android:padding="0dp"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:src="@drawable/B1ButtonXML" />
             <Space
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
@@ -150,7 +151,9 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:padding="0dp"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            android:src="@drawable/LayoutButtonXML"
+            android:layout_marginBottom="5dp" />
         <ImageButton
             android:id="@+id/HelpButton"
             android:layout_width="fill_parent"
@@ -183,7 +186,8 @@
                 android:layout_gravity="center"
                 android:layout_weight="2"
                 android:scaleType="fitXY"
-                android:padding="0dp" />
+                android:padding="0dp"
+                android:src="@drawable/B2ButtonXML" />
             <Space
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"

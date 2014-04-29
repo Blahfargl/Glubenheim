@@ -1,1 +1,1 @@
-<selector xmlns:android="http://schemas.android.com/apk/res/android"><item android:state_pressed="true" android:drawable="@drawable/selectbuttonp" /><!-- pressed --><item android:drawable="@drawable/selectbutton" /><!-- default --></selector>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"><item android:state_pressed="true" android:drawable="@drawable/select1p" /><!-- pressed --><item android:drawable="@drawable/select1" /><!-- default --></selector>

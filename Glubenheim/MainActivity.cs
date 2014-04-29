@@ -32,7 +32,7 @@ namespace Glubenheim
 			base.OnCreate (bundle);
 
 			// Set the view as the main.axml layout 
-			SetContentView (Resource.Layout.LLO1);
+			SetContentView (Resource.Layout.LLO2);
 
 			/* ImageButton
 			ImageButton imgButton = FindViewById<ImageButton> (Resource.Id.BlueButton);

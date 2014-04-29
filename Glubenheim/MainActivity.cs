@@ -105,18 +105,41 @@ namespace Glubenheim
 			toast.Show();
 		}
 
-		// Check touch position on button (Could be used to simulate mouse pad) 
+		float old_x = 0;
+		float old_y = 0;
+		float new_x = 0;
+		float new_y = 0;
+		Int32 int_x = 0;
+		Int32 int_y = 0;
+		string send_x = null;
+		string send_y = null;
+
+		// Check touch position on button 
 		public bool OnTouch(View v, MotionEvent e)
 		{
 			switch (e.Action)
 			{
-				// Print the x and y position for a click
+				// Get the x and y position for a touch (always before move)
 				case MotionEventActions.Down:
-					Console.WriteLine(e.GetX() + " " + e.GetY ());
+					old_x = e.GetX ();
+					old_y = e.GetY ();
+					Console.WriteLine ("x = " + old_x + " y = " + old_y);
 					break;
-				// Print the x and y position continously
+				// Get the x and y position difference continously
 				case MotionEventActions.Move:
-					Console.WriteLine(e.GetX() + " " + e.GetY ());
+					new_x = e.GetX () - old_x;
+					new_y = e.GetY () - old_y;
+					int_x = Convert.ToInt32 (new_x);
+					int_y = Convert.ToInt32 (new_y);
+					send_x = Convert.ToString (int_x);
+					send_y = Convert.ToString (int_y);
+
+					// Send x and y position over to messages
+					Connect (ipAddress, send_x);
+					Connect (ipAddress, send_y);
+
+					old_x = e.GetX ();
+					old_y = e.GetY ();
 					break;
 			}
 			return true;

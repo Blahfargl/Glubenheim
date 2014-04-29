@@ -2,12 +2,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Glubenheim\MainActivity.cs">
     <Files>
-      <File FileName="Glubenheim\MainActivity.cs" Line="44" Column="4" />
+      <File FileName="Glubenheim\MainActivity.cs" Line="186" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Glubenheim MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" AndroidDeviceId-Debug="emulator-5554" />
+  <MonoDevelop.Ide.ItemProperties.Glubenheim MonoForAntroid.PreferredDevice="7&quot; WSVGA (Tablet)" AndroidDeviceId-Debug="c0808f081495dbf" />
 </Properties>

@@ -50,7 +50,7 @@
             android:layout_height="0dp"
             android:layout_weight="1">
             <ImageButton
-                android:id="@+id/RightButton"
+                android:id="@+id/LeftButton"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_gravity="bottom"
@@ -64,7 +64,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="center" />
             <ImageButton
-                android:id="@+id/LeftButton"
+                android:id="@+id/RightButton"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_gravity="bottom"

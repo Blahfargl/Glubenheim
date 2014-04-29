@@ -6,10 +6,11 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Globalization;
+using System.Runtime.InteropServices;
 
 namespace tcpListener
 {
-	class MainClass : System.Windows.Forms.Form
+	class MainClass : Form
 	{
 		public static void Main (string[] args)
 		{
@@ -24,19 +25,19 @@ namespace tcpListener
 			try
 			{
 				// Set the TcpListener on some port.
-				Int32 port = 2814;
-				// Your local ipAddres.
+				Int32 port = 2814; 
+				// Your local ipAddres. 
 				// Open cmd -> write "ipconfig" -> see IPv4-address. 
-				IPAddress localAddr = IPAddress.Parse(ipFinder());
+				IPAddress localAddr = IPAddress.Parse(ipFinder()); 
 
-				server = new TcpListener(localAddr, port);
+				server = new TcpListener(localAddr, port); 
 
-				// Start listening for client requests.
-				server.Start();
+				// Start listening for client requests. 
+				server.Start(); 
 
-				// Buffer for reading data
-				Byte[] bytes = new Byte[256];
-				String data = null;
+				// Buffer for reading data 
+				Byte[] bytes = new Byte[256]; 
+				String data = null; 
 
 				// Enter the listening loop
 				while(true)
@@ -47,7 +48,6 @@ namespace tcpListener
 					// Perform a blocking call to accept requests
 					TcpClient client = server.AcceptTcpClient();
 					Console.WriteLine("Connected!");
-
 
 					data = null;
 
@@ -97,7 +97,6 @@ namespace tcpListener
 							}
 						}
 
-						// Possibly deleteable -----
 						// Process the data sent by the client
 						data = data.ToUpper();
 
@@ -126,8 +125,8 @@ namespace tcpListener
 			Console.Read();
 		}
 
-		// What happens when a message is received
-		// Sends keystrokes to the active window 
+		//----------------------------------------------------------------------------------------------- What happens when a message is received
+		// Sends keystrokes to the active window based on the received message
 		public static void msgReceived (string msg)
 		{
 			switch(msg)
@@ -168,31 +167,68 @@ namespace tcpListener
 			case "Bumper2Button":
 				SendKeys.SendWait ("Bumper2Button");
 				break;
-			case "MidButton":
-				MouseEventArgs. ("MidMouse");
+			case "MMidButton":
+				DoMouseMiddleClick ();
 				break;
 			case "MRightButton":
-				SendKeys.SendWait ("RightMouse");
+				DoMouseRightClick ();
 				break;
 			case "MLeftButton":
-				SendKeys.SendWait ("LeftMouse");
+				DoMouseLeftClick ();
 				break;
 			default:
-				// for random input text
+				// for input text
 				SendKeys.SendWait (msg);
-					break;
+				break;
 			}
 		}
 
-		// Setting a new mouse position 
+		//----------------------------------------------------------------------------------------------- Setting a new mouse position 
 		public static void mousePos(int new_x, int new_y)
 		{
-			int crnt_x = System.Windows.Forms.Control.MousePosition.X;
-			int crnt_y = System.Windows.Forms.Control.MousePosition.Y;
+			// Get current x and y mouse position
+			int crnt_x = Control.MousePosition.X;
+			int crnt_y = Control.MousePosition.Y;
+			// Setting a new position by adding input value to current position 
 			Cursor.Position = new Point (crnt_x + new_x, crnt_y + new_y);
 		}
 
-		private static string ipFinder(){ //Finds the last local ip address 
+		//----------------------------------------------------------------------------------------------- Simulate mouse clicks
+		// Import function for mouse clicks
+		[DllImport("USER32.DLL")]
+		public static extern void mouse_event(long dwFlags, long dx, long dy, long cButtons, long dwExtraInfo);
+
+		private const int mouse_LeftDown = 0x02;
+		private const int mouse_LeftUp = 0x04;
+		private const int mouse_RightDown = 0x08;
+		private const int mouse_RightUp = 0x10;
+		private const int mouse_MiddleDown = 0x20;
+		private const int mouse_MiddleUp = 0x40;
+
+		public static void DoMouseLeftClick()
+		{
+			//Call the imported function at the cursor's current position
+			int X = Cursor.Position.X;
+			int Y = Cursor.Position.Y;
+			mouse_event(mouse_LeftDown | mouse_LeftUp, X, Y, 0, 0);
+		}
+		public static void DoMouseRightClick()
+		{
+			//Call the imported function at the cursor's current position
+			int X = Cursor.Position.X;
+			int Y = Cursor.Position.Y;
+			mouse_event(mouse_RightDown | mouse_RightUp, X, Y, 0, 0);
+		}
+		public static void DoMouseMiddleClick()
+		{
+			//Call the imported function at the cursor's current position
+			int X = Cursor.Position.X;
+			int Y = Cursor.Position.Y;
+			mouse_event(mouse_MiddleDown | mouse_MiddleUp, X, Y, 0, 0);
+		}
+
+		//----------------------------------------------------------------------------------------------- Find the current ip addres
+		private static string ipFinder(){
 			IPHostEntry host;
 			string localIP = "?";
 			host = Dns.GetHostEntry(Dns.GetHostName());

@@ -149,7 +149,7 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_vertical"
-        android:layout_weight="3"
+        android:layout_weight="2"
         android:windowSoftInputMode="adjustPan">
         <EditText
             android:id="@+id/eText"
@@ -164,7 +164,7 @@
         <ImageButton
             android:id="@+id/SendButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_gravity="bottom"
             android:layout_weight="2"
             android:scaleType="fitXY"
@@ -173,7 +173,7 @@
         <ImageButton
             android:id="@+id/ClearButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_gravity="bottom"
             android:layout_weight="2"
             android:scaleType="fitXY"

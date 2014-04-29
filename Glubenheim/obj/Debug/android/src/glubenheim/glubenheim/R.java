@@ -74,19 +74,19 @@ public final class R {
     }
     public static final class id {
         public static final int AButton=0x7f070007;
-        public static final int B1Button=0x7f07000a;
-        public static final int B2Button=0x7f07000c;
         public static final int BButton=0x7f070008;
+        public static final int Bumper1Button=0x7f07000a;
+        public static final int Bumper2Button=0x7f07000c;
         public static final int ClearButton=0x7f070015;
         public static final int DownButton=0x7f070003;
         public static final int Help=0x7f070006;
         public static final int HelpButton=0x7f07000b;
-        public static final int LeftButton=0x7f070002;
+        public static final int LeftButton=0x7f070001;
         public static final int MLeftButton=0x7f070011;
+        public static final int MMidButton=0x7f070010;
         public static final int MRightButton=0x7f070012;
-        public static final int MidButton=0x7f070010;
         public static final int PopUp=0x7f070005;
-        public static final int RightButton=0x7f070001;
+        public static final int RightButton=0x7f070002;
         public static final int SelectButton=0x7f070004;
         public static final int SendButton=0x7f070014;
         public static final int StartButton=0x7f070009;

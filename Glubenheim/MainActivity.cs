@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Views.InputMethods;
 
 /* =====
  * Run this with emulator 15 (Android 4.0 and up, i think) 
@@ -21,7 +22,7 @@ namespace Glubenheim
 	{
 		// The ip address of the server
 		// Needs to be changed depending on which network is used
-		string ipAddress = "192.168.1.15"; //makes a layout that asks about the computers ip address
+		string ipAddress = "192.168.1.21"; 
 
 		// Build the apllication
 		protected override void OnCreate (Bundle bundle)
@@ -31,41 +32,27 @@ namespace Glubenheim
 
 			base.OnCreate (bundle);
 
-			// Set the view as the main.axml layout 
-			SetContentView (Resource.Layout.LLO2);
+			// Set the start layout 
+			SetLayout1 ();
+		} 
 
-			/* ImageButton
-			ImageButton imgButton = FindViewById<ImageButton> (Resource.Id.BlueButton);
+		//----------------------------------------------------------------------------------------------- Setting up the layouts
+		public void SetLayout1()
+		{
+			SetContentView (Resource.Layout.LLO1);
 
-			// In case of a click
-			imgButton.Click += delegate { 
-				DisplayCustomToast("Image clicked!");
-			};*/
+			SetPopUpAndHelp ();
 
-			// Buttons and events 
-<<<<<<< HEAD
-			Button UpButton = FindViewById<Button> (Resource.Id.UpButton);
-			Button DownButton = FindViewById<Button> (Resource.Id.DownButton);
-			Button LeftButton = FindViewById<Button> (Resource.Id.LeftButton);
-			Button RightButton = FindViewById<Button> (Resource.Id.RightButton);
-=======
-			/*Button button1 = FindViewById<Button> (Resource.Id.myButton1);
-			Button button2 = FindViewById<Button> (Resource.Id.myButton2);
-			Button button3 = FindViewById<Button> (Resource.Id.myButton3);
-			Button button4 = FindViewById<Button> (Resource.Id.myButton4);
->>>>>>> 7e31a57a990d5f1e66eaff60fe4537875ecef6ea
+			ImageButton UpButton = FindViewById<ImageButton> (Resource.Id.UpButton);
+			ImageButton DownButton = FindViewById<ImageButton> (Resource.Id.DownButton);
+			ImageButton LeftButton = FindViewById<ImageButton> (Resource.Id.LeftButton);
+			ImageButton RightButton = FindViewById<ImageButton> (Resource.Id.RightButton);
 
-			Button SelectButton = FindViewById<Button> (Resource.Id.SelectButton);
-			Button StartButton = FindViewById<Button> (Resource.Id.StartButton);
+			ImageButton SelectButton = FindViewById<ImageButton> (Resource.Id.SelectButton);
+			ImageButton StartButton = FindViewById<ImageButton> (Resource.Id.StartButton);
 
-			Button YButton = FindViewById<Button> (Resource.Id.YButton);
-			Button XButton = FindViewById<Button> (Resource.Id.XButton);
-			Button AButton = FindViewById<Button> (Resource.Id.AButton);
-			Button BButton = FindViewById<Button> (Resource.Id.BButton);
-
-			Button MMidButton = FindViewById<Button> (Resource.Id.MMidButton);
-			Button MRightButton = FindViewById<Button> (Resource.Id.MRightButton);
-			Button MLeftButton = FindViewById<Button> (Resource.Id.MLeftButton);
+			ImageButton AButton = FindViewById<ImageButton> (Resource.Id.AButton);
+			ImageButton BButton = FindViewById<ImageButton> (Resource.Id.BButton);
 
 			UpButton.Click += delegate {
 				Connect (ipAddress, "UpButton");
@@ -77,7 +64,7 @@ namespace Glubenheim
 				Connect (ipAddress, "LeftButton");
 			};
 			RightButton.Click += delegate {
-				Connect (ipAddress, "LeftButton");
+				Connect (ipAddress, "RightButton");
 			};
 
 			SelectButton.Click += delegate {
@@ -87,21 +74,100 @@ namespace Glubenheim
 				Connect (ipAddress, "StartButton");
 			};
 
-			YButton.Click += delegate {
-				Connect (ipAddress, "YButton");
-			};
-			XButton.Click += delegate {
-				Connect (ipAddress, "XButton");
-			};
 			AButton.Click += delegate {
 				Connect (ipAddress, "AButton");
 			};
 			BButton.Click += delegate {
 				Connect (ipAddress, "BButton");
 			};
+		}
+
+		public void SetLayout2()
+		{
+			SetContentView (Resource.Layout.LLO2);
+
+			SetPopUpAndHelp ();
+
+			ImageButton B1Button = FindViewById<ImageButton> (Resource.Id.Bumper1Button);
+			ImageButton B2Button = FindViewById<ImageButton> (Resource.Id.Bumper2Button);
+
+			ImageButton UpButton = FindViewById<ImageButton> (Resource.Id.UpButton);
+			ImageButton DownButton = FindViewById<ImageButton> (Resource.Id.DownButton);
+			ImageButton LeftButton = FindViewById<ImageButton> (Resource.Id.LeftButton);
+			ImageButton RightButton = FindViewById<ImageButton> (Resource.Id.RightButton);
+
+			ImageButton SelectButton = FindViewById<ImageButton> (Resource.Id.SelectButton);
+			ImageButton StartButton = FindViewById<ImageButton> (Resource.Id.StartButton);
+
+			ImageButton AButton = FindViewById<ImageButton> (Resource.Id.AButton);
+			ImageButton BButton = FindViewById<ImageButton> (Resource.Id.BButton);
+			ImageButton YButton = FindViewById<ImageButton> (Resource.Id.YButton);
+			ImageButton XButton = FindViewById<ImageButton> (Resource.Id.XButton);
+
+			B1Button.Click += delegate {
+				Connect(ipAddress, "Bumper1Button");
+			};
+			B2Button.Click += delegate {
+				Connect(ipAddress, "Bumper2Button");
+			};
+
+			UpButton.Click += delegate {
+				Connect (ipAddress, "UpButton");
+			};
+			DownButton.Click += delegate {
+				Connect (ipAddress, "DownButton");
+			};
+			LeftButton.Click += delegate {
+				Connect (ipAddress, "LeftButton");
+			};
+			RightButton.Click += delegate {
+				Connect (ipAddress, "RightButton");
+			};
+
+			SelectButton.Click += delegate {
+				Connect (ipAddress, "SelectButton");
+			};
+			StartButton.Click += delegate {
+				Connect (ipAddress, "StartButton");
+			};
+
+			AButton.Click += delegate {
+				Connect (ipAddress, "AButton");
+			};
+			BButton.Click += delegate {
+				Connect (ipAddress, "BButton");
+			};
+			YButton.Click += delegate {
+				Connect (ipAddress, "YButton");
+			};
+			XButton.Click += delegate {
+				Connect (ipAddress, "XButton");
+			};
+		}
+
+		public void SetLayout3()
+		{
+			SetContentView (Resource.Layout.LLO3);
+
+			// Hide keyboard when enter screen
+			Window.SetSoftInputMode(SoftInput.StateHidden);
+
+			SetPopUpAndHelp ();
+
+			ImageButton TouchPad = FindViewById<ImageButton> (Resource.Id.TouchPad);
+			ImageButton MMidButton = FindViewById<ImageButton> (Resource.Id.MMidButton);
+			ImageButton MRightButton = FindViewById<ImageButton> (Resource.Id.MRightButton);
+			ImageButton MLeftButton = FindViewById<ImageButton> (Resource.Id.MLeftButton);
+
+			ImageButton SendButton = FindViewById<ImageButton> (Resource.Id.SendButton);
+			ImageButton ClearButton = FindViewById<ImageButton> (Resource.Id.ClearButton);
+
+			EditText eText = FindViewById<EditText> (Resource.Id.eText);
+
+			TouchPad.SetOnTouchListener(this);
 
 			MMidButton.Click += delegate {
-				Connect (ipAddress, "MidMButton");
+				Connect (ipAddress, "MMidButton");
 			};
 			MRightButton.Click += delegate {
 				Connect (ipAddress, "MRightButton");
@@ -109,26 +175,49 @@ namespace Glubenheim
 			MLeftButton.Click += delegate {
 				Connect (ipAddress, "MLeftButton");
 			};
-			*/
 
+			SendButton.Click += delegate {
+				// Only send if the text has more than 0 digits
+				if(eText.Text.Length != 0)
+				{
+					Connect(ipAddress, eText.Text);
+					eText.Text = "";
+				}
+
+				// Remove keyboard automatically when button is clicked
+				var inputManager = (InputMethodManager)GetSystemService(InputMethodService);
+				inputManager.HideSoftInputFromWindow(eText.WindowToken, HideSoftInputFlags.None);
+			};
+
+			// Clear the text in the text field
+			ClearButton.Click += delegate {
+				eText.Text = "";
+			};
+		}
+
+		//----------------------------------------------------------------------------------------------- PopUp button and help button
+		// PopUp button and help button appear in all layouts
+		public void SetPopUpAndHelp()
+		{
 			// Build and shows a PopupMenu, used for the selection of layouts
-			ImageButton showPopupMenu = FindViewById<ImageButton> (Resource.Id.PopUp); // Finds the popupBUtton in the class Main and call it showPopupMenu
+			ImageButton showPopupMenu = FindViewById<ImageButton> (Resource.Id.PopUp); 
 			showPopupMenu.Click += (s, arg) => {
 				PopupMenu menu = new PopupMenu (this, showPopupMenu); // Here the button is made into a popupMenu
-				menu.Inflate (Resource.Menu.popup_menu); // Loader our popup_Menu.xml
+				menu.Inflate (Resource.Menu.popup_menu); // Loads our popup_menu.xml
 
 				menu.MenuItemClick += (s1, arg1) => { 
 					// This switch case checks which item (layout) has been clicked
+					// and sets the layout accordingly
 					switch (arg1.Item.ItemId)
 					{
 						case Resource.Id.item1:
-							DisplayCustomToast("Item 1");
+							SetLayout1();
 							break;
 						case Resource.Id.item2:
-							DisplayCustomToast("Item 2");
+							SetLayout2();
 							break;
 						case Resource.Id.item3:
-							DisplayCustomToast("Item 3");
+							SetLayout3();
 							break;
 					}
 				};
@@ -139,17 +228,10 @@ namespace Glubenheim
 
 				// This line draws the menu
 				menu.Show (); 
-			}; 
-		} 
-
-		// Creating a toast with a given text 
-		public void DisplayCustomToast (string stringText)
-		{
-			Toast toast = Toast.MakeText(this, stringText, ToastLength.Short);
-			toast.SetGravity(GravityFlags.Bottom, 0, 0);
-			toast.Show();
+			};
 		}
 
+		//----------------------------------------------------------------------------------------------- On touch listener
 		float old_x = 0;
 		float old_y = 0;
 		float new_x = 0;
@@ -172,17 +254,21 @@ namespace Glubenheim
 					break;
 				// Get the x and y position difference continously
 				case MotionEventActions.Move:
+					// Get the difference between current position and old position
 					new_x = e.GetX () - old_x;
 					new_y = e.GetY () - old_y;
+					// Convert to int, to remove decimal numbers (apparently can't be send through the tcp listener)
 					int_x = Convert.ToInt32 (new_x);
 					int_y = Convert.ToInt32 (new_y);
+					// Convert to string, so it can be send
 					send_x = Convert.ToString (int_x);
 					send_y = Convert.ToString (int_y);
-
-					// Send x and y position over to messages
+					
+					// Send x and y position over two messages
 					Connect (ipAddress, send_x);
 					Connect (ipAddress, send_y);
-
+					
+					// Set old position to current position
 					old_x = e.GetX ();
 					old_y = e.GetY ();
 					break;
@@ -190,6 +276,7 @@ namespace Glubenheim
 			return true;
 		}
 
+		//----------------------------------------------------------------------------------------------- Connection to tcp server
 		// Connect with Tcp server on computer,
 		// while sending a message (server = ipAddress of computer)
 		static void Connect(String server, String message) 

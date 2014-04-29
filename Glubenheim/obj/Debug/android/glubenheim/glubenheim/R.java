@@ -81,12 +81,12 @@ public final class R {
         public static final int DownButton=0x7f070003;
         public static final int Help=0x7f070006;
         public static final int HelpButton=0x7f07000b;
-        public static final int LeftButton=0x7f070002;
+        public static final int LeftButton=0x7f070001;
         public static final int MLeftButton=0x7f070011;
         public static final int MMidButton=0x7f070010;
         public static final int MRightButton=0x7f070012;
         public static final int PopUp=0x7f070005;
-        public static final int RightButton=0x7f070001;
+        public static final int RightButton=0x7f070002;
         public static final int SelectButton=0x7f070004;
         public static final int SendButton=0x7f070014;
         public static final int StartButton=0x7f070009;

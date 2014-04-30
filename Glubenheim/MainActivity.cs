@@ -230,15 +230,17 @@ namespace Glubenheim
 				menu.Show (); 
 			};
 
+			// Opens a dialog (popup screen) when clicking the help button
 			ImageButton helpButton = FindViewById<ImageButton> (Resource.Id.HelpButton);
 			helpButton.Click += OpenHelpDialog;
 		}
 
 		void OpenHelpDialog (object sender, EventArgs e)
 		{
-			var dlgAlert = (new AlertDialog.Builder (this)).Create ();
-			dlgAlert.SetTitle ("Help");
-			dlgAlert.SetMessage (
+			// Creates the help dialog and sets a title, bodytext, and 'OK' button
+			var helpDialog = (new AlertDialog.Builder (this)).Create ();
+			helpDialog.SetTitle ("Help");
+			helpDialog.SetMessage (
 				"The application currently have 3 layouts that can all be changed between by pressing the “layout” button. " +
 				"The buttons are by default bound to the following, but can (currently only) be changed in the code inside the tcpListener:\n" +
 				"Up, down, left and right arrows: Bound to their respective arrow keys " +
@@ -254,13 +256,8 @@ namespace Glubenheim
 				"\n\tRight Mouse Button: " +
 				"\n\tMiddle Mouse Button: "
 			);
-			dlgAlert.SetButton ("OK", ButtonHandler);
-			dlgAlert.Show ();
-		}
-
-		void ButtonHandler (object sender, DialogClickEventArgs e)
-		{
-			// I case of more buttons, this is where you tell them what to do
+			helpDialog.SetButton ("OK", delegate{ });
+			helpDialog.Show ();
 		}
 
 		//----------------------------------------------------------------------------------------------- On touch listener

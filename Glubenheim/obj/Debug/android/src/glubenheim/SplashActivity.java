@@ -11,7 +11,7 @@ public class SplashActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("Glubenheim.SplashActivity, Glubenheim, Version=1.0.5233.1631, Culture=neutral, PublicKeyToken=null", SplashActivity.class, __md_methods);
+		mono.android.Runtime.register ("Glubenheim.SplashActivity, Glubenheim, Version=1.0.5233.2003, Culture=neutral, PublicKeyToken=null", SplashActivity.class, __md_methods);
 	}
 
 
@@ -19,7 +19,7 @@ public class SplashActivity
 	{
 		super ();
 		if (getClass () == SplashActivity.class)
-			mono.android.TypeManager.Activate ("Glubenheim.SplashActivity, Glubenheim, Version=1.0.5233.1631, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Glubenheim.SplashActivity, Glubenheim, Version=1.0.5233.2003, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

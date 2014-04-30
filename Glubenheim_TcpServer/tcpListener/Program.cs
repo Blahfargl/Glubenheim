@@ -129,6 +129,7 @@ namespace tcpListener
 		// Sends keystrokes to the active window based on the received message
 		public static void msgReceived (string msg)
 		{
+			//A switchcase in which we set the keybinds of the button input from the android device.
 			switch(msg)
 			{
 			case "UpButton":
@@ -227,7 +228,7 @@ namespace tcpListener
 			mouse_event(mouse_MiddleDown | mouse_MiddleUp, X, Y, 0, 0);
 		}
 
-		//----------------------------------------------------------------------------------------------- Find the current ip addres
+		//----------------------------------------------------------------------------------------------- Finds the last ip addres on the current list.
 		private static string ipFinder(){
 			IPHostEntry host;
 			string localIP = "?";

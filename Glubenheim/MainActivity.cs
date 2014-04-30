@@ -23,6 +23,7 @@ namespace Glubenheim
 		// The ip address of the server
 		// Needs to be changed depending on which network is used
 		string ipAddress = "192.168.1.16"; 
+		//Change into a dialogue box where we ask the user to write the ip addres
 
 		// Build the apllication
 		protected override void OnCreate (Bundle bundle)
@@ -42,7 +43,8 @@ namespace Glubenheim
 			SetContentView (Resource.Layout.LLO1);
 
 			SetPopUpAndHelp ();
-
+			 
+			//Where we delegate the buttons output that is send to the server side  for layout 1
 			ImageButton UpButton = FindViewById<ImageButton> (Resource.Id.UpButton);
 			ImageButton DownButton = FindViewById<ImageButton> (Resource.Id.DownButton);
 			ImageButton LeftButton = FindViewById<ImageButton> (Resource.Id.LeftButton);
@@ -88,6 +90,7 @@ namespace Glubenheim
 
 			SetPopUpAndHelp ();
 
+			//Where we delegate the buttons output that is send to the server side  for layout 2
 			ImageButton B1Button = FindViewById<ImageButton> (Resource.Id.Bumper1Button);
 			ImageButton B2Button = FindViewById<ImageButton> (Resource.Id.Bumper2Button);
 
@@ -154,6 +157,7 @@ namespace Glubenheim
 
 			SetPopUpAndHelp ();
 
+			//Where we delegate the buttons and touchpad output that is send to the server side  for layout 3
 			ImageButton TouchPad = FindViewById<ImageButton> (Resource.Id.TouchPad);
 			ImageButton MMidButton = FindViewById<ImageButton> (Resource.Id.MMidButton);
 			ImageButton MRightButton = FindViewById<ImageButton> (Resource.Id.MRightButton);

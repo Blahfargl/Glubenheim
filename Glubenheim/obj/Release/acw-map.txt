@@ -1,0 +1,2 @@
+Glubenheim.MainActivity;glubenheim.MainActivity
+Glubenheim.SplashActivity;glubenheim.SplashActivity

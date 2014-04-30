@@ -22,7 +22,7 @@ namespace Glubenheim
 	{
 		// The ip address of the server
 		// Needs to be changed depending on which network is used
-		string ipAddress = "192.168.1.21"; 
+		string ipAddress = "192.168.1.16"; 
 
 		// Build the apllication
 		protected override void OnCreate (Bundle bundle)
@@ -246,15 +246,13 @@ namespace Glubenheim
 				"Up, down, left and right arrows: Bound to their respective arrow keys " +
 				"\n\tStart: q " +
 				"\n\tSelect: p " +
-				"\n\tA: " +
-				"\n\tB: " +
-				"\n\tX: " +
-				"\n\tY: " +
-				"\n\tLeft Bumper: Print Screen" +
-				"\n\tRight Bumper: " +
-				"\n\tLeft Mouse Button: " +
-				"\n\tRight Mouse Button: " +
-				"\n\tMiddle Mouse Button: "
+				"\n\tA: x" +
+				"\n\tB: z" +
+				"\n\tX: (Not bound)" +
+				"\n\tY: (Not bound)" +
+				"\n\tLeft Bumper: (not nound)" +
+				"\n\tRight Bumper: (not bound)" +
+				"\nLeft, right, and middle mouse buttons: Bound to their respective mouse buttons"
 			);
 			helpDialog.SetButton ("OK", delegate{ });
 			helpDialog.Show ();

@@ -1,13 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Glubenheim\MainActivity.cs">
     <Files>
-      <File FileName="Glubenheim\MainActivity.cs" Line="258" Column="6" />
+      <File FileName="Glubenheim\MainActivity.cs" Line="237" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Glubenheim MonoForAntroid.PreferredDevice="7&quot; WSVGA (Tablet)" AndroidDeviceId-Debug="c0808f081495dbf" />
+  <MonoDevelop.Ide.ItemProperties.Glubenheim MonoForAntroid.PreferredDevice="7&quot; WSVGA (Tablet)" AndroidDeviceId-Debug="c0808f081495dbf" AndroidDeviceId-Release="c0808f081495dbf" />
 </Properties>

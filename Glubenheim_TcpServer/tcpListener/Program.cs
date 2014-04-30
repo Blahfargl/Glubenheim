@@ -144,10 +144,10 @@ namespace tcpListener
 				SendKeys.SendWait ("{RIGHT}");
 				break;
 			case "SelectButton":
-				SendKeys.SendWait ("{ESC}");
+				SendKeys.SendWait ("p");
 				break;
 			case "StartButton":
-				SendKeys.SendWait ("{ENTER}");
+				SendKeys.SendWait ("q");
 				break;
 			case "YButton":
 				SendKeys.SendWait ("YButton");
@@ -156,10 +156,10 @@ namespace tcpListener
 				SendKeys.SendWait ("XButton");
 				break;
 			case "AButton":
-				SendKeys.SendWait ("AButton");
+				SendKeys.SendWait ("x");
 				break;
 			case "BButton":
-				SendKeys.SendWait ("BButton");
+				SendKeys.SendWait ("z");
 				break;
 			case "Bumper1Button":
 				SendKeys.SendWait ("Bumper1Button");

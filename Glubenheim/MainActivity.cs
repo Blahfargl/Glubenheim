@@ -229,6 +229,38 @@ namespace Glubenheim
 				// This line draws the menu
 				menu.Show (); 
 			};
+
+			ImageButton helpButton = FindViewById<ImageButton> (Resource.Id.HelpButton);
+			helpButton.Click += OpenHelpDialog;
+		}
+
+		void OpenHelpDialog (object sender, EventArgs e)
+		{
+			var dlgAlert = (new AlertDialog.Builder (this)).Create ();
+			dlgAlert.SetTitle ("Help");
+			dlgAlert.SetMessage (
+				"The application currently have 3 layouts that can all be changed between by pressing the “layout” button. " +
+				"The buttons are by default bound to the following, but can (currently only) be changed in the code inside the tcpListener:\n" +
+				"Up, down, left and right arrows: Bound to their respective arrow keys " +
+				"\n\tStart: q " +
+				"\n\tSelect: p " +
+				"\n\tA: " +
+				"\n\tB: " +
+				"\n\tX: " +
+				"\n\tY: " +
+				"\n\tLeft Bumper: Print Screen" +
+				"\n\tRight Bumper: " +
+				"\n\tLeft Mouse Button: " +
+				"\n\tRight Mouse Button: " +
+				"\n\tMiddle Mouse Button: "
+			);
+			dlgAlert.SetButton ("OK", ButtonHandler);
+			dlgAlert.Show ();
+		}
+
+		void ButtonHandler (object sender, DialogClickEventArgs e)
+		{
+			// I case of more buttons, this is where you tell them what to do
 		}
 
 		//----------------------------------------------------------------------------------------------- On touch listener
